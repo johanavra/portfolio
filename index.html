@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johana Raga | Ingeniera en Computación</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-es">
+
+    <!-- 1. PANTALLA SPLASH (INTRO) -->
+    <div id="splash-screen">
+      <div class="intro-content">
+        <div class="text-column">
+            
+            <!-- BOTONES DE IDIOMA -->
+            <div class="lang-selector">
+                <button id="btn-es" class="lang-btn active">Español</button>
+                <button id="btn-en" class="lang-btn">English</button>
+            </div>
+
+            <h1 class="hello-world">
+                <span class="es">¡Hola mundo!</span>
+                <span class="en">Hello world!</span>
+            </h1>
+            <p class="intro-text">
+                <span class="es">Soy Johana Raga, Ingeniera en Computación. Gracias por tomarte el tiempo de visitar mi espacio, espero que disfrutes el recorrido.</span>
+                <span class="en">I am Johana Raga, Computer Engineer. Thank you for taking the time to visit my space, I hope you enjoy the tour.</span>
+            </p>
+            <button id="btn-empezar" class="btn-empezar">
+                <span class="es">Empezar &rarr;</span>
+                <span class="en">Start &rarr;</span>
+            </button>
+        </div>
+
+        <div class="logo-face">
+          <div class="bracket top">{</div>
+          <div class="ojos-tracker">
+              <div class="ojos-blink">
+                  <span class="punto"></span>
+                  <span class="punto"></span>
+              </div>
+          </div>
+          <div class="bracket bottom">}</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 2. PORTAFOLIO PRINCIPAL -->
+    <main id="portafolio-principal" style="display: none; opacity: 0;">
+      
+      <!-- NAVBAR -->
+      <nav class="navbar hidden-ui" id="navbar">
+          <div class="nav-logo">
+              <div class="mini-logo-face">
+                  <div class="bracket top">{</div>
+                  <div class="ojos-tracker mini-tracker">
+                      <div class="ojos-blink">
+                          <span class="punto mini-punto"></span>
+                          <span class="punto mini-punto"></span>
+                      </div>
+                  </div>
+                  <div class="bracket bottom">}</div>
+              </div>
+          </div>
+
+          <ul class="nav-links">
+              <li><a href="#sobre-mi"><span class="es">Sobre mí</span><span class="en">About me</span></a></li>
+              <li><a href="#experiencia"><span class="es">Experiencia</span><span class="en">Experience</span></a></li>
+              <li><a href="#proyectos"><span class="es">Proyectos</span><span class="en">Projects</span></a></li>
+              <li><a href="#habilidades"><span class="es">Habilidades</span><span class="en">Skills</span></a></li>
+              <li><a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a></li>
+          </ul>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+          <div class="hero-box" id="hero-box">
+              <h1 class="hero-title" id="hero-title">
+                  <span class="es">SOY JOHANA RAGA</span>
+                  <span class="en">I AM JOHANA RAGA</span>
+              </h1>
+              <div class="hero-subtitle hidden-ui" id="hero-subtitle">
+                  <span class="es">Ingeniera en Computación &nbsp;|&nbsp; Desarrolladora Web &nbsp;|&nbsp; Integraciones</span>
+                  <span class="en">Computer Engineer &nbsp;|&nbsp; Web Developer &nbsp;|&nbsp; Integrations</span>
+              </div>
+          </div>
+      </section>
+
+      <!-- SECCIÓN: SOBRE MÍ -->
+      <section id="sobre-mi" class="about-section">
+          <div class="about-top-grid reveal">
+              <div class="profile-card glass-panel">
+                  <div class="profile-photo">
+                      <div class="photo-placeholder">
+                          <img src="aditional/johanaraga.webp" alt="Foto de Johana Raga" class="mi-foto">
+                      </div>
+                  </div>
+                  <h3>Johana Raga</h3>
+                  <div class="social-links">
+                      <a href="https://www.linkedin.com/in/ingjohanaraga" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="mailto:johana13raga@gmail.com" class="social-btn"><i class="fa-solid fa-envelope"></i></a>
+                      <a href="https://wa.me/584145306567" target="_blank" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                  </div>
+              </div>
+
+              <div class="about-info">
+                  <h2>
+                      <span class="es">¡Hola! Soy Johana Raga,<br><span class="highlight">Ingeniera en Computación y Desarrolladora Web.</span></span>
+                      <span class="en">Hello! I'm Johana Raga,<br><span class="highlight">Computer Engineer and Web Developer.</span></span>
+                  </h2>
+                  <p>
+                      <span class="es">Me especializo en ser la pieza técnica estratégica para agencias de marketing y negocios B2B internacionales. Traduzco requerimientos complejos en sitios web rápidos, estructurados y optimizados para la conversión.</span>
+                      <span class="en">I specialize in being the strategic technical piece for marketing agencies and international B2B businesses. I translate complex requirements into fast, structured, and conversion-optimized websites.</span>
+                  </p>
+                  
+                  <!-- BOTÓN DE CV DINÁMICO (ES / EN) -->
+                  <a href="aditional/Curriculum%20Johana%20Raga.pdf" download="CV_Johana_Raga.pdf" target="_blank" class="btn-cv es">
+                      Descargar CV (ES) &darr;
+                  </a>
+                  <a href="aditional/CurriculumJohanaRagaEN.pdf" download="CV_Johana_Raga_EN.pdf" target="_blank" class="btn-cv en">
+                      Download Resume (EN) &darr;
+                  </a>
+
+                  <div class="skills-grid">
+                      <span>&gt; <span class="es">Desarrollo Front-End</span><span class="en">Front-End Development</span></span>
+                      <span>&gt; <span class="es">Integraciones CRM</span><span class="en">CRM Integrations</span></span>
+                      <span>&gt; <span class="es">Optimización SEO</span><span class="en">SEO Optimization</span></span>
+                      <span>&gt; <span class="es">Maquetación Avanzada</span><span class="en">Advanced Layout</span></span>
+                      <span>&gt; JavaScript / CSS3</span>
+                      <span>&gt; <span class="es">Soluciones B2B</span><span class="en">B2B Solutions</span></span>
+                  </div>
+              </div>
+          </div>
+
+          <h2 class="section-title reveal">
+              <span class="es">Mis Pilares</span>
+              <span class="en">My Pillars</span>
+          </h2>
+          
+          <div class="cards-grid reveal">
+              <div class="feature-card glass-panel">
+                  <div class="card-icon">💻</div>
+                  <h4><span class="es">Código Limpio</span><span class="en">Clean Code</span></h4>
+                  <p>
+                      <span class="es">Estructuras sólidas, escalables y fáciles de mantener. Me enfoco en el rendimiento y las buenas prácticas detrás de cada línea.</span>
+                      <span class="en">Solid, scalable, and easy-to-maintain structures. I focus on performance and best practices behind every single line of code.</span>
+                  </p>
+              </div>
+              <div class="feature-card glass-panel">
+                  <div class="card-icon">⚙️</div>
+                  <h4><span class="es">Automatización</span><span class="en">Automation</span></h4>
+                  <p>
+                      <span class="es">Conexión de APIs, configuración de plataformas CRM y creación de flujos de trabajo eficientes para negocios.</span>
+                      <span class="en">API connections, CRM platform configurations, and the creation of highly efficient workflows for businesses.</span>
+                  </p>
+              </div>
+              <div class="feature-card glass-panel">
+                  <div class="card-icon">🌍</div>
+                  <h4><span class="es">Visión Global</span><span class="en">Global Vision</span></h4>
+                  <p>
+                      <span class="es">Experiencia colaborando con agencias y clientes internacionales, adaptándome a altos estándares de calidad.</span>
+                      <span class="en">Extensive experience collaborating with international agencies and clients, adapting to high quality standards.</span>
+                  </p>
+              </div>
+          </div>
+      </section>
+
+      <!-- SECCIÓN: EXPERIENCIA -->
+      <section id="experiencia" class="experience-section reveal">
+          <h2 class="section-title">
+              <span class="es">Experiencia</span>
+              <span class="en">Experience</span>
+          </h2>
+          
+          <div class="experience-container">
+              
+              <div class="exp-item">
+                  <div class="exp-icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                  <div class="exp-content">
+                      <h3><span class="es">Desarrolladora Web</span><span class="en">Web Developer</span></h3>
+                      <span class="exp-date">Studio Pech | <span class="es">Octubre 2025 – Presente</span><span class="en">October 2025 – Present</span></span>
+                      <p>
+                          <span class="es">Desarrollo y maquetación de plataformas web B2B optimizadas para la conversión, utilizando WordPress y constructores visuales avanzados. Diseño e implementación de flujos de trabajo (workflows) para la automatización y captura eficiente de leads. Estructuración técnica de estrategias SEO, configuración de metadatos y optimización de rendimiento para clientes internacionales.</span>
+                          <span class="en">Development and layout of B2B web platforms optimized for conversion, using WordPress and advanced visual builders. Design and implementation of workflows for automation and efficient lead capture. Technical structuring of SEO strategies, metadata configuration, and performance optimization for international clients.</span>
+                      </p>
+                  </div>
+              </div>
+
+              <div class="exp-item">
+                  <div class="exp-icon-box"><i class="fa-solid fa-globe"></i></div>
+                  <div class="exp-content">
+                      <h3><span class="es">Desarrolladora Web (Freelance)</span><span class="en">Web Developer (Freelance)</span></h3>
+                      <span class="exp-date"><span class="es">Colaboración con</span><span class="en">Collaboration with</span> Sepia Agency | <span class="es">Enero 2026 – Presente</span><span class="en">January 2026 – Present</span></span>
+                      <p>
+                          <span class="es">Construcción de sitios web corporativos con arquitectura completamente multilingüe (Alemán, Inglés, Árabe) para clínicas del sector salud en Alemania. Configuración de formularios de alta conversión y enrutamiento seguro de datos de pacientes hacia correos corporativos. Gestión de infraestructura técnica, incluyendo administración de hosting, conexión de dominios y aplicación de protocolos de seguridad.</span>
+                          <span class="en">Construction of corporate websites with fully multilingual architecture (German, English, Arabic) for healthcare clinics in Germany. Configuration of high-conversion forms and secure routing of patient data to corporate emails. Technical infrastructure management, including hosting administration, domain connection, and implementation of security protocols.</span>
+                      </p>
+                  </div>
+              </div>
+
+              <div class="exp-item">
+                  <div class="exp-icon-box"><i class="fa-solid fa-server"></i></div>
+                  <div class="exp-content">
+                      <h3><span class="es">Desarrolladora Full Stack (Pasantías)</span><span class="en">Developer and Technical Support (Internship)</span></h3>
+                      <span class="exp-date">Boom Solutions VE | <span class="es">Marzo 2025 – Julio 2025</span><span class="en">March 2025 – July 2025</span></span>
+                      <p>
+                          <span class="es">Participación en el ciclo de vida completo del desarrollo de software, desde la planificación hasta el despliegue. Desarrollo de componentes de interfaz de usuario (Front-End) y lógica de servidor (Back-End) bajo supervisión. Colaboración en la gestión y mantenimiento de bases de datos para asegurar la integridad de la información. Prestación de soporte técnico a usuarios, diagnosticando y resolviendo incidencias.</span>
+                          <span class="en">Participation in the full software development lifecycle, from planning to deployment. Development of user interface (Front-End) components and server logic (Back-End) under supervision. Collaboration in database management and maintenance to ensure information integrity. Providing technical support to users, diagnosing and resolving software and hardware incidents.</span>
+                      </p>
+                  </div>
+              </div>
+
+              <div class="exp-item">
+                  <div class="exp-icon-box"><i class="fa-solid fa-chart-line"></i></div>
+                  <div class="exp-content">
+                      <h3><span class="es">Analista de Proyectos Tecnológicos</span><span class="en">Technology Projects Analyst</span></h3>
+                      <span class="exp-date">TECHNOVA CORP LTD | <span class="es">Diciembre 2023 – Octubre 2024</span><span class="en">December 2023 – October 2024</span></span>
+                      <p>
+                          <span class="es">Colaboración en la gestión de proyectos de Investigación y Desarrollo (I+D). Participación en el diseño de propuestas tecnológicas y análisis de su viabilidad técnica y de mercado. Realización de estudios de mercados emergentes para identificar nuevas oportunidades tecnológicas. Análisis de riesgos técnicos asociados a los nuevos proyectos.</span>
+                          <span class="en">Collaboration in the management of Research and Development (R&D) projects. Participation in the design of technological proposals and analysis of their technical and market feasibility. Conducting studies on emerging markets to identify new technological opportunities. Analysis of technical risks associated with new projects.</span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- SECCIÓN PROYECTOS -->
+      <section id="proyectos" class="projects-section reveal">
+          <h2 class="section-title">
+              <span class="es">Mis Proyectos</span>
+              <span class="en">My Projects</span>
+          </h2>
+
+          <div class="project-filters">
+              <button class="filter-btn active" data-filter="profesional"><span class="es">Profesionales</span><span class="en">Professional</span></button>
+              <button class="filter-btn" data-filter="personal"><span class="es">Personales</span><span class="en">Personal</span></button>
+          </div>
+
+          <div class="carousel-container">
+              
+              <div class="carousel-card profesional">
+                  <img src="aditional/neurohazzan.webp" alt="Neurohazzan">
+                  <div class="card-info glass-panel">
+                      <h3>Neurohazzan <span class="es">(Alemania)</span><span class="en">(Germany)</span></h3>
+                      <p>
+                          <span class="es">Arquitectura Multilingüe & Enrutamiento</span>
+                          <span class="en">Multilingual Architecture & Data Routing</span>
+                      </p>
+                      <button class="btn-detalles" data-target="modal-neurohazzan"><span class="es">Ver resumen &rarr;</span><span class="en">View summary &rarr;</span></button>
+                  </div>
+              </div>
+
+              <div class="carousel-card profesional">
+                  <img src="aditional/scapefy.webp" alt="Scapefy">
+                  <div class="card-info glass-panel">
+                      <h3>Scapefy</h3>
+                      <p>
+                          <span class="es">Ecosistema de Ventas & Integración CRM</span>
+                          <span class="en">Sales Ecosystem & CRM Integration</span>
+                      </p>
+                      <button class="btn-detalles" data-target="modal-scapefy"><span class="es">Ver resumen &rarr;</span><span class="en">View summary &rarr;</span></button>
+                  </div>
+              </div>
+
+              <div class="carousel-card profesional">
+                  <img src="aditional/SSC.webp" alt="SunSouth">
+                  <div class="card-info glass-panel">
+                      <h3>SunSouth Carolinas</h3>
+                      <p>
+                          <span class="es">Reestructuración Web & Seguridad DNS</span>
+                          <span class="en">Web Restructuring & DNS Security</span>
+                      </p>
+                      <button class="btn-detalles" data-target="modal-sunsouth"><span class="es">Ver resumen &rarr;</span><span class="en">View summary &rarr;</span></button>
+                  </div>
+              </div>
+
+              <div class="carousel-card profesional">
+                  <img src="aditional/PC.webp" alt="Proyecto Creces">
+                  <div class="card-info glass-panel">
+                      <h3>Proyecto Creces</h3>
+                      <p>
+                          <span class="es">Gestión de Leads & Sincronización</span>
+                          <span class="en">Lead Management & Data Synchronization</span>
+                      </p>
+                      <button class="btn-detalles" data-target="modal-creces"><span class="es">Ver resumen &rarr;</span><span class="en">View summary &rarr;</span></button>
+                  </div>
+              </div>
+
+              <div class="carousel-card profesional">
+                  <img src="aditional/pedrotorrellas.webp" alt="Pedro Torrellas">
+                  <div class="card-info glass-panel">
+                      <h3>Psic. Pedro Torrellas</h3>
+                      <p>
+                          <span class="es">Plataforma de Reservas & Formularios</span>
+                          <span class="en">Booking Platform & Advanced Forms</span>
+                      </p>
+                      <button class="btn-detalles" data-target="modal-pedro"><span class="es">Ver resumen &rarr;</span><span class="en">View summary &rarr;</span></button>
+                  </div>
+              </div>
+
+              <div class="carousel-card profesional">
+                  <img src="aditional/studipech.webp" alt="Studio Pech">
+                  <div class="card-info glass-panel">
+                      <h3>Studio Pech</h3>
+                      <p>
+                          <span class="es">Desarrollo Web Corporativo</span>
+                          <span class="en">Corporate Web Development</span>
+                      </p>
+                      <button class="btn-detalles" data-target="modal-pech"><span class="es">Ver resumen &rarr;</span><span class="en">View summary &rarr;</span></button>
+                  </div>
+              </div>
+
+              <div class="carousel-card personal">
+                  <img src="aditional/personal6.webp" alt="App Tesis" style="object-fit: contain; background-color: #050505;">
+                  <div class="card-info glass-panel">
+                      <h3>Vitalis App <span class="es">(Tesis)</span><span class="en">(Thesis)</span></h3>
+                      <p>
+                          <span class="es">Desarrollo de App IoT para Salud</span>
+                          <span class="en">IoT Health Monitoring App Development</span>
+                      </p>
+                      <button class="btn-detalles" data-target="modal-personal"><span class="es">Ver resumen &rarr;</span><span class="en">View summary &rarr;</span></button>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- ==============================================
+           SECCIÓN: HABILIDADES (NUEVO DISEÑO CON ÍCONOS)
+           ============================================== -->
+      <section id="habilidades" class="reveal" style="padding: 100px 60px; text-align: center; max-width: 1300px; margin: 0 auto;">
+          <h2 class="section-title">
+              <span class="es">Mis Habilidades</span>
+              <span class="en">My Skills</span>
+          </h2>
+          
+          <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+              
+              <div class="glass-panel feature-card" style="width: 100%; max-width: 220px; padding: 40px 20px; transition: transform 0.3s ease;">
+                  <i class="fa-solid fa-code" style="font-size: 4rem; color: #266d82; margin-bottom: 25px;"></i>
+                  <h4 style="font-size: 1.3rem; margin-bottom: 15px; font-weight: 700;"><span class="es">Lenguajes</span><span class="en">Languages</span></h4>
+                  <p style="font-size: 0.95rem; color: #b3b3b3; line-height: 1.6;">JavaScript, TypeScript, HTML5, CSS3, SQL, PHP, C++, C#, Dart</p>
+              </div>
+
+              <div class="glass-panel feature-card" style="width: 100%; max-width: 220px; padding: 40px 20px; transition: transform 0.3s ease;">
+                  <i class="fa-solid fa-layer-group" style="font-size: 4rem; color: #266d82; margin-bottom: 25px;"></i>
+                  <h4 style="font-size: 1.3rem; margin-bottom: 15px; font-weight: 700;">Frameworks</h4>
+                  <p style="font-size: 0.95rem; color: #b3b3b3; line-height: 1.6;">React, Node.js, Flutter</p>
+              </div>
+
+              <div class="glass-panel feature-card" style="width: 100%; max-width: 220px; padding: 40px 20px; transition: transform 0.3s ease;">
+                  <i class="fa-solid fa-database" style="font-size: 4rem; color: #266d82; margin-bottom: 25px;"></i>
+                  <h4 style="font-size: 1.3rem; margin-bottom: 15px; font-weight: 700;"><span class="es">Bases de Datos</span><span class="en">Databases</span></h4>
+                  <p style="font-size: 0.95rem; color: #b3b3b3; line-height: 1.6;">PostgreSQL, Supabase, MySQL</p>
+              </div>
+
+              <div class="glass-panel feature-card" style="width: 100%; max-width: 220px; padding: 40px 20px; transition: transform 0.3s ease;">
+                  <i class="fa-brands fa-wordpress" style="font-size: 4rem; color: #266d82; margin-bottom: 25px;"></i>
+                  <h4 style="font-size: 1.3rem; margin-bottom: 15px; font-weight: 700;"><span class="es">Plataformas</span><span class="en">Platforms</span></h4>
+                  <p style="font-size: 0.95rem; color: #b3b3b3; line-height: 1.6;">WordPress, Elementor, GoHighLevel, WooCommerce, Resend</p>
+              </div>
+
+              <div class="glass-panel feature-card" style="width: 100%; max-width: 220px; padding: 40px 20px; transition: transform 0.3s ease;">
+                  <i class="fa-brands fa-figma" style="font-size: 4rem; color: #266d82; margin-bottom: 25px;"></i>
+                  <h4 style="font-size: 1.3rem; margin-bottom: 15px; font-weight: 700;"><span class="es">Herramientas</span><span class="en">Tools</span></h4>
+                  <p style="font-size: 0.95rem; color: #b3b3b3; line-height: 1.6;">Git/GitHub, Figma, Optimización SEO, DNS, Office</p>
+              </div>
+          </div>
+      </section>
+
+      <!-- ==============================================
+           SECCIÓN: CONTACTO 
+           ============================================== -->
+      <section id="contacto" class="reveal" style="padding: 100px 60px; text-align: center; max-width: 1000px; margin: 0 auto;">
+          <h2 class="section-title" style="margin-bottom: 10px;">
+              <span class="es">Contacto</span>
+              <span class="en">Contact</span>
+          </h2>
+          <p style="font-size: 1.2rem; color: #b3b3b3; margin-bottom: 50px;">
+              <span class="es">¡Conéctate conmigo!</span>
+              <span class="en">Connect with me!</span>
+          </p>
+          
+          <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+              
+              <a href="mailto:johana13raga@gmail.com" class="glass-panel feature-card" style="text-decoration: none; color: white; display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 220px; transition: transform 0.3s; padding: 40px 20px;">
+                  <i class="fa-solid fa-envelope" style="font-size: 3.5rem; color: #266d82; margin-bottom: 20px;"></i>
+                  <span style="font-size: 1.2rem; font-weight: 700;">Email</span>
+                  <span style="font-size: 0.95rem; color: #b3b3b3; margin-top: 10px;">johana13raga@gmail.com</span>
+              </a>
+
+              <a href="https://wa.me/584145306567" target="_blank" class="glass-panel feature-card" style="text-decoration: none; color: white; display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 220px; transition: transform 0.3s; padding: 40px 20px;">
+                  <i class="fa-solid fa-phone" style="font-size: 3.5rem; color: #266d82; margin-bottom: 20px;"></i>
+                  <span style="font-size: 1.2rem; font-weight: 700;"><span class="es">Teléfono</span><span class="en">Phone</span></span>
+                  <span style="font-size: 0.95rem; color: #b3b3b3; margin-top: 10px;">+58 414 5306567</span>
+              </a>
+
+              <!-- TARJETA DE CV BILINGÜE -->
+              <a href="aditional/Curriculum%20Johana%20Raga.pdf" download="CV_Johana_Raga_ES.pdf" target="_blank" class="glass-panel feature-card es" style="text-decoration: none; color: white; display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 220px; transition: transform 0.3s; padding: 40px 20px;">
+                  <i class="fa-solid fa-file-pdf" style="font-size: 3.5rem; color: #266d82; margin-bottom: 20px;"></i>
+                  <span style="font-size: 1.2rem; font-weight: 700;">Currículum</span>
+                  <span style="font-size: 0.95rem; color: #b3b3b3; margin-top: 10px;">Descargar (ES)</span>
+              </a>
+              <a href="aditional/CurriculumJohanaRagaEN.pdf" download="CV_Johana_Raga_EN.pdf" target="_blank" class="glass-panel feature-card en" style="text-decoration: none; color: white; display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 220px; transition: transform 0.3s; padding: 40px 20px;">
+                  <i class="fa-solid fa-file-pdf" style="font-size: 3.5rem; color: #266d82; margin-bottom: 20px;"></i>
+                  <span style="font-size: 1.2rem; font-weight: 700;">Resume</span>
+                  <span style="font-size: 0.95rem; color: #b3b3b3; margin-top: 10px;">Download (EN)</span>
+              </a>
+          </div>
+      </section>
+
+      <!-- ==============================================
+           MODALES DE PROYECTOS
+           ============================================== -->
+      
+      <div id="modal-neurohazzan" class="modal-overlay">
+          <div class="modal-content glass-panel">
+              <button class="close-modal">&times;</button>
+              <div class="modal-grid">
+                  <div class="modal-text">
+                      <h3 class="modal-title">Neurohazzan</h3>
+                      <p class="modal-desc">
+                          <span class="es">Sitio web corporativo desarrollado en colaboración con Sepia Agency para una clínica privada en Alemania. La arquitectura del sitio es completamente multilingüe (Alemán, Inglés, Árabe) e incluye la configuración de formularios de alta conversión enrutados de forma segura al correo corporativo del cliente. Se gestionó la infraestructura de hosting, dominio y protocolos de seguridad.</span>
+                          <span class="en">Corporate website developed in collaboration with Sepia Agency for a private clinic in Germany. The site architecture is completely multilingual (German, English, Arabic) and includes the configuration of high-conversion forms routed securely to the client's corporate email. Hosting infrastructure, domain, and security protocols were managed.</span>
+                      </p>
+                      <ul class="modal-links">
+                          <li><i class="fa-solid fa-globe"></i> <a href="https://neurohazzan.de/" target="_blank">neurohazzan.de</a></li>
+                      </ul>
+                  </div>
+                  <div class="modal-slider">
+                      <div class="slider-container">
+                          <video src="aditional/homeneuro.webm" class="slide-img active" loop muted playsinline></video>
+                          <video src="aditional/homeneuro1.webm" class="slide-img" loop muted playsinline></video>
+                          <video src="aditional/homeneuro2.webm" class="slide-img" loop muted playsinline></video>
+                          <video src="aditional/homeneuro3.webm" class="slide-img" loop muted playsinline></video>
+                          <video src="aditional/homeneuro4.webm" class="slide-img" loop muted playsinline></video>
+                          <video src="aditional/homeneuro5.webm" class="slide-img" loop playsinline></video>
+                      </div>
+                      <button class="slider-btn prev-btn">&#10094;</button><button class="slider-btn next-btn">&#10095;</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-scapefy" class="modal-overlay">
+          <div class="modal-content glass-panel">
+              <button class="close-modal">&times;</button>
+              <div class="modal-grid">
+                  <div class="modal-text">
+                      <h3 class="modal-title">Scapefy</h3>
+                      <p class="modal-desc">
+                          <span class="es">Plataforma B2B para la venta de paquetes de diseño 3D y planos 2D para contratistas. Desarrollado en colaboración con Studio Pech. El sistema fue integrado directamente con GoHighLevel para automatizar la recopilación de datos del cliente, la gestión de leads y la notificación de paquetes contratados al equipo de ventas. Se implementó toda la configuración técnica del hosting, seguridad perimetral y estructura base para SEO.</span>
+                          <span class="en">B2B platform for selling 3D design packages and 2D floor plans for contractors. Developed in collaboration with Studio Pech. The system was directly integrated with GoHighLevel to automate client data collection, lead management, and notification of contracted packages to the sales team. Full technical configuration of hosting, perimeter security, and base SEO structure was implemented.</span>
+                      </p>
+                      <ul class="modal-links">
+                          <li><i class="fa-solid fa-globe"></i> <a href="https://scapefy.com/" target="_blank">scapefy.com</a></li>
+                      </ul>
+                  </div>
+                  <div class="modal-slider">
+                      <div class="slider-container">
+                          <img src="aditional/scpaefy1.webp" class="slide-img active" alt="Scapefy Inicio">
+                          <img src="aditional/scapefy2.webp" class="slide-img" alt="Scapefy Sección 2">
+                          <img src="aditional/scapefy3.webp" class="slide-img" alt="Scapefy Sección 3">
+                          <img src="aditional/scapefy4.webp" class="slide-img" alt="Scapefy Sección 4">
+                          <img src="aditional/scapefy5.webp" class="slide-img" alt="Scapefy Sección 5">
+                      </div>
+                      <button class="slider-btn prev-btn">&#10094;</button><button class="slider-btn next-btn">&#10095;</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-sunsouth" class="modal-overlay">
+          <div class="modal-content glass-panel">
+              <button class="close-modal">&times;</button>
+              <div class="modal-grid">
+                  <div class="modal-text">
+                      <h3 class="modal-title">SunSouth Carolinas</h3>
+                      <p class="modal-desc">
+                          <span class="es">Desarrollo completo de sitio web B2B y configuración técnica de infraestructura. Trabajo realizado en colaboración con Studio Pech. Se implementó un diseño optimizado para conversión, estructuración de metadatos SEO y configuración avanzada de registros DNS (SPF, DKIM, DMARC) en Cloudflare para asegurar la entregabilidad de correos.</span>
+                          <span class="en">Complete B2B website development and technical infrastructure configuration. Work done in collaboration with Studio Pech. An optimized design for conversion, SEO metadata structuring, and advanced DNS record configuration (SPF, DKIM, DMARC) in Cloudflare were implemented to ensure email deliverability.</span>
+                      </p>
+                      <ul class="modal-links">
+                          <li><i class="fa-solid fa-globe"></i> <a href="https://sunsouthcarolinas.com/" target="_blank">sunsouthcarolinas.com</a></li>
+                      </ul>
+                  </div>
+                  <div class="modal-slider">
+                      <div class="slider-container">
+                          <img src="aditional/ssc1.png" class="slide-img active" alt="SunSouth 1">
+                          <img src="aditional/ssc2.png" class="slide-img" alt="SunSouth 2">
+                          <img src="aditional/ssc3.png" class="slide-img" alt="SunSouth 3">
+                          <img src="aditional/ssc4.png" class="slide-img" alt="SunSouth 4">
+                      </div>
+                      <button class="slider-btn prev-btn">&#10094;</button><button class="slider-btn next-btn">&#10095;</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-creces" class="modal-overlay">
+          <div class="modal-content glass-panel">
+              <button class="close-modal">&times;</button>
+              <div class="modal-grid">
+                  <div class="modal-text">
+                      <h3 class="modal-title">Proyecto Creces</h3>
+                      <p class="modal-desc">
+                          <span class="es">Plataforma para un centro psicológico enfocada en la conversión de pacientes. Desarrollado en colaboración con Studio Pech. Se desarrolló la lógica de formularios para clasificar intereses (citas online, presenciales o talleres) enrutando las notificaciones automáticas vía correo electrónico y organizando la data extraída directamente en hojas de Excel para el equipo administrativo.</span>
+                          <span class="en">Platform for a psychological center focused on patient conversion. Developed in collaboration with Studio Pech. Form logic was developed to classify interests (online appointments, in-person, or workshops), routing automatic notifications via email and organizing extracted data directly into Excel sheets for the administrative team.</span>
+                      </p>
+                      <ul class="modal-links">
+                          <li><i class="fa-solid fa-globe"></i> <a href="https://proyectocreces.com/" target="_blank">proyectocreces.com</a></li>
+                      </ul>
+                  </div>
+                  <div class="modal-slider">
+                      <div class="slider-container">
+                          <img src="aditional/creces4.webp" class="slide-img active" alt="Creces 4">
+                          <img src="aditional/creces3.webp" class="slide-img" alt="Creces 3">
+                          <img src="aditional/creces2.webp" class="slide-img" alt="Creces 2">
+                          <img src="aditional/creces1.webp" class="slide-img" alt="Creces 1">
+                      </div>
+                      <button class="slider-btn prev-btn">&#10094;</button><button class="slider-btn next-btn">&#10095;</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-pedro" class="modal-overlay">
+          <div class="modal-content glass-panel">
+              <button class="close-modal">&times;</button>
+              <div class="modal-grid">
+                  <div class="modal-text">
+                      <h3 class="modal-title">Psicólogo Pedro Torrellas</h3>
+                      <p class="modal-desc">
+                          <span class="es">Sitio web profesional de marca personal y captación de pacientes. Proyecto llevado a cabo en colaboración con Studio Pech. Implementación técnica de infraestructura web, gestión de dominios y seguridad, junto con un sistema de reserva y contacto conectado a bases de datos en Excel y notificaciones por correo para optimizar la agenda del especialista.</span>
+                          <span class="en">Professional personal brand and patient capture website. Project carried out in collaboration with Studio Pech. Technical implementation of web infrastructure, domain management, and security, along with a booking and contact system connected to Excel databases and email notifications to optimize the specialist's agenda.</span>
+                      </p>
+                      <ul class="modal-links">
+                          <li><i class="fa-solid fa-globe"></i> <a href="https://psicologopedrotorrellas.com/" target="_blank">psicologopedrotorrellas.com</a></li>
+                      </ul>
+                  </div>
+                  <div class="modal-slider">
+                      <div class="slider-container">
+                          <img src="aditional/sp4.webp" class="slide-img active" alt="Pedro 4">
+                          <img src="aditional/pedro3.webp" class="slide-img" alt="Pedro 3">
+                          <img src="aditional/pedro2.webp" class="slide-img" alt="Pedro 2">
+                          <img src="aditional/pedro1.webp" class="slide-img" alt="Pedro 1">
+                      </div>
+                      <button class="slider-btn prev-btn">&#10094;</button><button class="slider-btn next-btn">&#10095;</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-pech" class="modal-overlay">
+          <div class="modal-content glass-panel">
+              <button class="close-modal">&times;</button>
+              <div class="modal-grid">
+                  <div class="modal-text">
+                      <h3 class="modal-title">Studio Pech</h3>
+                      <p class="modal-desc">
+                          <span class="es">Construcción y maquetación de la página web corporativa oficial de la agencia de marketing. Proyecto desarrollado internamente como parte del equipo de Studio Pech. Desarrollo del front-end actual en vivo, implementación de protocolos de seguridad del servidor y preparación de la infraestructura técnica para futuras expansiones del sitio.</span>
+                          <span class="en">Construction and layout of the official corporate website of the marketing agency. Project developed internally as part of the Studio Pech team. Development of the current live front-end, implementation of server security protocols, and preparation of the technical infrastructure for future site expansions.</span>
+                      </p>
+                      <ul class="modal-links">
+                          <li><i class="fa-solid fa-globe"></i> <a href="https://studiopech.com/" target="_blank">studiopech.com</a></li>
+                      </ul>
+                  </div>
+                  <div class="modal-slider">
+                      <div class="slider-container">
+                          <img src="aditional/sp3.webp" class="slide-img active" alt="Studio Pech 3">
+                          <img src="aditional/sp2.webp" class="slide-img" alt="Studio Pech 2">
+                          <img src="aditional/sp1.webp" class="slide-img" alt="Studio Pech 1">
+                      </div>
+                      <button class="slider-btn prev-btn">&#10094;</button><button class="slider-btn next-btn">&#10095;</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-personal" class="modal-overlay">
+          <div class="modal-content glass-panel">
+              <button class="close-modal">&times;</button>
+              <div class="modal-grid">
+                  <div class="modal-text">
+                      <h3 class="modal-title">Vitalis App <span class="es">(Tesis IoT)</span><span class="en">(IoT Thesis)</span></h3>
+                      <p class="modal-desc">
+                          <span class="es">Desarrollo integral de una aplicación móvil conectada a un prototipo físico (hardware) de grado médico. El sistema registra en tiempo real la medición de temperatura corporal, frecuencia cardíaca, glucosa y niveles de oxígeno en sangre. Incorpora una lógica de notificaciones automatizadas que emite alertas instantáneas a los familiares del paciente si los valores registrados se salen de los parámetros normales, sirviendo como una herramienta de respuesta rápida ante emergencias.</span>
+                          <span class="en">Comprehensive development of a mobile application connected to a medical-grade physical prototype (hardware). The system records body temperature, heart rate, glucose, and blood oxygen levels in real-time. It incorporates automated notification logic that issues instant alerts to the patient's relatives if the recorded values fall outside normal parameters, serving as a rapid emergency response tool.</span>
+                      </p>
+                  </div>
+                  <div class="modal-slider">
+                      <div class="slider-container">
+                          <img src="aditional/personal6.webp" class="slide-img active" alt="App Pantalla 6" style="object-fit: contain; background-color: #050505;">
+                          <img src="aditional/personal5.webp" class="slide-img" alt="App Pantalla 5" style="object-fit: contain; background-color: #050505;">
+                          <img src="aditional/personal4.webp" class="slide-img" alt="App Pantalla 4" style="object-fit: contain; background-color: #050505;">
+                          <img src="aditional/personal3.webp" class="slide-img" alt="App Pantalla 3" style="object-fit: contain; background-color: #050505;">
+                          <img src="aditional/personal2.webp" class="slide-img" alt="App Pantalla 2" style="object-fit: contain; background-color: #050505;">
+                          <img src="aditional/personal1.webp" class="slide-img" alt="App Pantalla 1" style="object-fit: contain; background-color: #050505;">
+                      </div>
+                      <button class="slider-btn prev-btn">&#10094;</button><button class="slider-btn next-btn">&#10095;</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    </main>
+
+    <!-- Archivo JS -->
+    <script src="script.js"></script>
+</body>
+</html>
